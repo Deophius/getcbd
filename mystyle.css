@@ -1,0 +1,35 @@
+.cond {
+    scale: 0.65
+}
+
+#main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: wrap;
+    object-fit: scale-down;
+}
+
+#main::after {
+    flex: auto;
+    content: "";
+}
+
+button {
+    background-color: #FF6600;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 2px;
+    border-radius: 5px;
+    border-color: #CCCCCC;
+    border-width: 1px;
+}
+
+#tools {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#zoom-scroll {
+    width: 20vw;
+}
