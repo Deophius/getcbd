@@ -11,11 +11,15 @@ function toggle_vis(obj) {
     }
 }
 
-function show_all_products() {
+function toggle_intermediates() {
     var subs = document.getElementsByClassName('sub');
-    for (var i = 0; i < subs.length; i++) {
-        subs[i].src = "images/" + String(2 * i + 1) + '.png';
+    var butt = document.getElementById('all-toggler');
+    // Add this stuff after the number.
+    const target_prefix = (butt.innerHTML == 'Show all') ? "" : "blank";
+    for (var i = 1; i < subs.length - 1; i++) {
+        subs[i].src = "images/" + String(2 * i + 1) + target_prefix + '.png';
     }
+    butt.innerHTML = (butt.innerHTML == 'Show all') ? 'Hide all' : 'Show all';
 }
 
 function toggle_blanks() {

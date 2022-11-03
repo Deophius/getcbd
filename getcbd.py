@@ -150,7 +150,7 @@ def make_page(prodname, max_number, doi):
 <body>
     <div id="tools">
         <button onclick="toggle_blanks();" id="blank-toggler" type="button">Hide blanks</button>
-        <button onclick="show_all_products();" type="button">Show all</button>
+        <button onclick="toggle_intermediates();" id="all-toggler" type="button">Show all</button>
         <a href="https://{link}/{doi}" target="_blank">{doi}</a>
         <p>Scale:<input type="range" min="10" max="200" value="100" oninput="zoom_main(this);" id="zoom-scroll" /></p>
     </div>
